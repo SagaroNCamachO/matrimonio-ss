@@ -14,7 +14,6 @@ export async function POST(request: Request) {
     );
   }
 
-  // Validar longitud de campos
   if (fullName.length > 200) {
     return NextResponse.json(
       { message: 'El nombre completo es demasiado largo (máximo 200 caracteres)' },
@@ -29,7 +28,6 @@ export async function POST(request: Request) {
     );
   }
 
-  // Validar formato de email si se proporciona
   if (email) {
     if (email.length > 200) {
       return NextResponse.json(
@@ -46,43 +44,38 @@ export async function POST(request: Request) {
     }
   }
 
-  // Sanitizar y formatear el nombre con mayúsculas iniciales
-  // Remover caracteres peligrosos pero mantener acentos y espacios
   const sanitizedName = fullName.replace(/[<>\"'&]/g, '');
+
   const formattedName = sanitizedName
     .split(' ')
-    .filter(word => word.length > 0)
+    .filter((word: string) => word.length > 0)   // 👈 CORREGIDO
     .map((word: string) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
     .join(' ')
-    .substring(0, 200); // Limitar longitud final
+    .substring(0, 200);
 
   const database = readDatabase();
-  
-  // Buscar si ya existe un invitado con el mismo nombre o teléfono
+
   const existingByName = database.guests.find(
     (guest) => guest.name.toLowerCase() === formattedName.toLowerCase(),
   );
-  
+
   const existingByPhone = database.guests.find(
     (guest) => guest.phone && guest.phone === phone,
   );
 
   if (existingByName) {
-    // Actualizar invitado existente
     existingByName.confirmed = true;
     existingByName.phone = phone;
     if (email) {
       existingByName.email = email;
     }
   } else if (existingByPhone) {
-    // Actualizar invitado existente por teléfono
     existingByPhone.name = formattedName;
     existingByPhone.confirmed = true;
     if (email) {
       existingByPhone.email = email;
     }
   } else {
-    // Crear nuevo invitado
     database.guests.push({
       id: Date.now().toString(),
       name: formattedName,
@@ -98,4 +91,3 @@ export async function POST(request: Request) {
     message: '¡Gracias por confirmar tu asistencia! Te esperamos en nuestro día especial.',
   });
 }
-
