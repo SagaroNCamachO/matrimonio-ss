@@ -12,8 +12,8 @@ export default function AdditionalInfo({ weddingInfo }: AdditionalInfoProps) {
     {
       icon: Phone,
       title: 'Contacto',
-      description: additionalInfo.contact?.description || 'Para cualquier consulta o ayuda durante el viaje',
-      details: [
+      description: 'Para cualquier consulta o ayuda durante el viaje',
+            details: [
         additionalInfo.contact?.phone && `Teléfono: ${additionalInfo.contact.phone}`,
         additionalInfo.contact?.email && `Email: ${additionalInfo.contact.email}`,
       ].filter(Boolean) as string[],
@@ -36,7 +36,7 @@ export default function AdditionalInfo({ weddingInfo }: AdditionalInfoProps) {
     {
       icon: Music,
       title: 'Música',
-      description: additionalInfo.music?.description || '¿Tienes alguna canción especial?',
+      description: additionalInfo.music?.description || '¿Tienes alguna canción especial que no puede faltar?',
       details: additionalInfo.music?.details || [],
       badge: 'bg-[#f9e0ec] text-[#a94c7b]',
     },
