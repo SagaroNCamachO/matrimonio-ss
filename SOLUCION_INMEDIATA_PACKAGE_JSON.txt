@@ -1,0 +1,136 @@
+═══════════════════════════════════════════════════════════════
+  ✅ SOLUCIÓN INMEDIATA: Error "No Next.js version detected"
+═══════════════════════════════════════════════════════════════
+
+PROBLEMA: Vercel no encuentra tu package.json
+
+CAUSA: El ZIP tiene una estructura incorrecta o el Root Directory 
+       está mal configurado.
+
+═══════════════════════════════════════════════════════════════
+  SOLUCIÓN RÁPIDA (5 minutos)
+═══════════════════════════════════════════════════════════════
+
+PASO 1: Crear ZIP Correcto
+───────────────────────────────────────────────────────────────
+
+1. Abre: C:\Users\Usuario\Desktop\Programa\Matrimonio
+
+2. IMPORTANTE: NO selecciones la carpeta "Matrimonio" completa
+   En su lugar, selecciona SOLO estos archivos/carpetas:
+
+   ✅ package.json          (archivo)
+   ✅ package-lock.json     (archivo)
+   ✅ next.config.js        (archivo)
+   ✅ tsconfig.json         (archivo)
+   ✅ tailwind.config.ts    (archivo)
+   ✅ postcss.config.js     (archivo)
+   ✅ .eslintrc.json        (archivo)
+   ✅ .gitignore            (archivo)
+   ✅ src/                  (carpeta completa)
+   ✅ public/               (carpeta completa)
+   ✅ data/                 (carpeta completa)
+
+3. Click derecho → "Enviar a" → "Carpeta comprimida (en zip)"
+
+4. Renombra a: matrimonio-correcto.zip
+
+5. ABRE el ZIP y verifica que package.json esté en la RAÍZ:
+   
+   ✅ CORRECTO:
+   matrimonio-correcto.zip
+   ├── package.json          ← En la raíz
+   ├── next.config.js
+   ├── src/
+   └── ...
+
+   ❌ INCORRECTO:
+   matrimonio-correcto.zip
+   └── Matrimonio/           ← Carpeta extra
+       ├── package.json      ← Dentro de subcarpeta
+       └── ...
+
+───────────────────────────────────────────────────────────────
+
+PASO 2: Eliminar Proyecto en Vercel
+───────────────────────────────────────────────────────────────
+
+1. Ve a vercel.com
+2. Entra a tu proyecto
+3. Settings → Scroll hasta abajo
+4. "Delete Project"
+5. Confirma
+
+───────────────────────────────────────────────────────────────
+
+PASO 3: Crear Proyecto Nuevo
+───────────────────────────────────────────────────────────────
+
+1. En Vercel: "Add New" → "Project"
+2. Sube tu ZIP: matrimonio-correcto.zip
+3. Vercel detectará Next.js automáticamente
+
+4. VERIFICA la configuración:
+   → Framework Preset: Next.js ✅
+   → Root Directory: (debe estar VACÍO o ser ./) ✅
+   → Build Command: npm run build ✅
+   → Output Directory: .next ✅
+
+5. Si Root Directory NO está vacío:
+   → Click en "Edit"
+   → Déjalo VACÍO o pon ./
+   → Guarda
+
+───────────────────────────────────────────────────────────────
+
+PASO 4: Configurar Variables de Entorno
+───────────────────────────────────────────────────────────────
+
+ANTES de hacer deploy:
+
+1. Busca "Environment Variables" o "Variables de Entorno"
+2. Agrega estas 4 variables:
+
+   Variable 1:
+   - Name: ADMIN_USERNAME
+   - Value: Admin
+   - Environments: ✅ Production ✅ Preview ✅ Development
+
+   Variable 2:
+   - Name: ADMIN_PASSWORD
+   - Value: [Genera una contraseña segura]
+   - Environments: ✅ Production ✅ Preview ✅ Development
+
+   Variable 3:
+   - Name: ADMIN_TOKEN
+   - Value: [Genera un token aleatorio de 32+ caracteres]
+   - Environments: ✅ Production ✅ Preview ✅ Development
+
+   Variable 4:
+   - Name: NEXT_PUBLIC_BASE_URL
+   - Value: https://matrimonio.vercel.app
+   - Environments: ✅ Production ✅ Preview ✅ Development
+
+───────────────────────────────────────────────────────────────
+
+PASO 5: Deploy
+───────────────────────────────────────────────────────────────
+
+1. Scroll hacia abajo
+2. Click "Deploy"
+3. Espera 2-5 minutos
+4. ¡Listo! ✅
+
+═══════════════════════════════════════════════════════════════
+  VERIFICACIÓN FINAL
+═══════════════════════════════════════════════════════════════
+
+Antes de hacer deploy, verifica:
+
+[ ] package.json está en la raíz del ZIP
+[ ] Root Directory en Vercel está vacío o es ./
+[ ] Variables de entorno configuradas (4 variables)
+[ ] Todas las variables marcadas en Production
+
+═══════════════════════════════════════════════════════════════
+

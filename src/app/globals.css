@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fff9f9;
+  --foreground: #3f2025;
+  --rose-100: #fdf2f4;
+  --rose-200: #f9e0e4;
+  --rose-300: #f3c5ce;
+  --rose-400: #e7a0a9;
+  --rose-500: #d37986;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  background-image: radial-gradient(circle at top, rgba(255, 218, 230, 0.6), transparent 40%),
+    radial-gradient(circle at 20% 20%, rgba(248, 205, 215, 0.5), transparent 35%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+@layer components {
+  .input {
+    @apply w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-rose-500 focus:outline-none transition;
+  }
+
+  .card {
+    @apply border border-gray-100 rounded-2xl p-4 shadow-sm bg-white;
+  }
+
+  .card-title {
+    @apply text-lg font-semibold text-gray-800 mb-4;
+  }
+
+  .label {
+    @apply block text-sm font-semibold text-gray-600 mb-2;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+

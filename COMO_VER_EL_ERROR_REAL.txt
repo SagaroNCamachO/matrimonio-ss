@@ -1,0 +1,73 @@
+═══════════════════════════════════════════════════════════════
+  🔍 CÓMO VER EL ERROR REAL EN VERCEL
+═══════════════════════════════════════════════════════════════
+
+El error 404 es solo el RESULTADO.
+El ERROR REAL está en los "Build Logs".
+
+═══════════════════════════════════════════════════════════════
+  PASO A PASO PARA VER EL ERROR REAL
+═══════════════════════════════════════════════════════════════
+
+1. Ve a: https://vercel.com
+2. Entra a tu cuenta
+3. Click en tu proyecto (el que creaste)
+4. Arriba verás un menú:
+   → Overview | Deployments | Settings | etc.
+
+5. Click en "Deployments"
+6. Verás una lista de deployments
+   → El más reciente está arriba
+   → Si está en ROJO = Falló ❌
+   → Si está en VERDE = Funcionó ✅
+
+7. Click en el deployment más reciente (el de arriba)
+
+8. Ahora verás:
+   → Información del deployment
+   → Una pestaña que dice "Build Logs" o "Logs"
+   
+9. Click en "Build Logs" o "Logs"
+
+10. Scroll hacia abajo y busca:
+   → Líneas en ROJO
+   → Líneas que digan "Error:"
+   → Líneas que digan "Failed:"
+   → Líneas que digan "Build failed"
+
+═══════════════════════════════════════════════════════════════
+  QUÉ HACER CON EL ERROR
+═══════════════════════════════════════════════════════════════
+
+Cuando encuentres el error, cópialo completo y compártemelo.
+
+Ejemplos de errores comunes:
+
+❌ "Error: Cannot find module '@/lib/db'"
+   → Falta el archivo en el ZIP
+
+❌ "Error: Missing environment variable"
+   → Falta una variable de entorno
+
+❌ "Error: Build timeout"
+   → El ZIP es muy grande
+
+❌ "Error: Command 'npm run build' exited with 1"
+   → Hay un error en el código
+
+═══════════════════════════════════════════════════════════════
+  SI NO VES "BUILD LOGS"
+═══════════════════════════════════════════════════════════════
+
+Si no ves la pestaña "Build Logs", significa que:
+→ El deployment nunca inició
+→ O fue eliminado
+
+En ese caso:
+1. Elimina el proyecto en Vercel
+2. Crea un proyecto nuevo
+3. Sube el ZIP otra vez
+4. Configura variables ANTES de deploy
+
+═══════════════════════════════════════════════════════════════
+

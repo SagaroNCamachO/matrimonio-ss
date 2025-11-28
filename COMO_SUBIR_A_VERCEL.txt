@@ -1,0 +1,106 @@
+═══════════════════════════════════════════════════════════════
+  🚀 CÓMO SUBIR A VERCEL SIN GIT - PASO A PASO SIMPLE
+═══════════════════════════════════════════════════════════════
+
+PASO 1: CREAR ZIP (2 minutos)
+───────────────────────────────────────────────────────────────
+
+1. Abre el Explorador de Archivos
+2. Ve a: C:\Users\Usuario\Desktop\Programa\Matrimonio
+3. Presiona Ctrl + A (selecciona todo)
+4. Click derecho → "Enviar a" → "Carpeta comprimida (en zip)"
+5. Renombra a: matrimonio.zip
+
+⚠️ IMPORTANTE: NO incluyas node_modules ni .next
+   (Si los ves, elimínalos del ZIP antes de subir)
+
+───────────────────────────────────────────────────────────────
+PASO 2: CREAR CUENTA EN VERCEL (3 minutos)
+───────────────────────────────────────────────────────────────
+
+1. Abre tu navegador
+2. Ve a: https://vercel.com
+3. Click "Sign Up" (arriba derecha)
+4. Elige "Continue with Google" (más rápido)
+5. Autoriza Vercel
+
+───────────────────────────────────────────────────────────────
+PASO 3: SUBIR PROYECTO (5 minutos)
+───────────────────────────────────────────────────────────────
+
+1. En Vercel, click "Add New..." → "Project"
+2. Busca "Upload" o "Browse"
+3. Selecciona tu archivo matrimonio.zip
+   O arrastra tu carpeta directamente
+4. Vercel detectará Next.js automáticamente
+5. NO CAMBIES NADA en la configuración
+
+───────────────────────────────────────────────────────────────
+PASO 4: VARIABLES DE ENTORNO (MUY IMPORTANTE)
+───────────────────────────────────────────────────────────────
+
+ANTES de hacer deploy, agrega estas variables:
+
+Busca "Environment Variables" o "Variables de Entorno"
+
+Agrega estas 4 variables (una por una):
+
+1. ADMIN_USERNAME
+   Valor: Admin
+   Marca: Production, Preview, Development
+
+2. ADMIN_PASSWORD
+   Valor: [Genera una contraseña segura]
+   Usa: https://randomkeygen.com/ → "Fort Knox Password"
+   O usa: Matrimonio2026!Seguro#
+   Marca: Production, Preview, Development
+
+3. ADMIN_TOKEN
+   Valor: [Genera un token aleatorio]
+   Usa: https://randomkeygen.com/ → "CodeIgniter Encryption Keys"
+   O copia: a7f3b9c2d8e4f1a6b5c9d2e7f3a8b4c1d6e9f2a5b8c1d4e7f0a3b6c9d2e5f8a1b4
+   Marca: Production, Preview, Development
+
+4. NEXT_PUBLIC_BASE_URL
+   Valor: https://matrimonio.vercel.app
+   (Cambiarás esto después con tu URL real)
+   Marca: Production, Preview, Development
+
+───────────────────────────────────────────────────────────────
+PASO 5: HACER DEPLOY (3 minutos)
+───────────────────────────────────────────────────────────────
+
+1. Scroll hacia abajo
+2. Click "Deploy" (botón grande)
+3. Espera 2-5 minutos
+4. Verás: "Deployment successful"
+5. Click "Visit" o copia la URL
+
+───────────────────────────────────────────────────────────────
+PASO 6: VERIFICAR (2 minutos)
+───────────────────────────────────────────────────────────────
+
+1. Abre la URL que te dio Vercel
+2. Verifica que la página carga
+3. Ve a: tu-url.vercel.app/admin
+4. Login con: Admin / tu contraseña
+5. Verifica que funciona
+
+───────────────────────────────────────────────────────────────
+SI ALGO SALE MAL
+───────────────────────────────────────────────────────────────
+
+Error "Build Failed":
+→ Ve a Deployments → Click en el deployment fallido
+→ Lee los logs para ver el error
+→ Avísame el error y te ayudo
+
+No puedo iniciar sesión:
+→ Verifica las variables de entorno
+→ Asegúrate de que ADMIN_PASSWORD sea correcta
+→ Haz un nuevo deploy
+
+───────────────────────────────────────────────────────────────
+GUÍA DETALLADA: Ver DEPLOYMENT_SIN_GIT.md
+───────────────────────────────────────────────────────────────
+

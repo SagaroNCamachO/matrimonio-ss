@@ -1,0 +1,96 @@
+═══════════════════════════════════════════════════════════════
+  🆘 ERROR 404 NOT_FOUND - SOLUCIÓN RÁPIDA
+═══════════════════════════════════════════════════════════════
+
+El error 404 significa que el deployment FALLÓ.
+Necesitas ver QUÉ ERROR hay en los logs.
+
+═══════════════════════════════════════════════════════════════
+  PASO 1: VER EL ERROR REAL (2 minutos)
+═══════════════════════════════════════════════════════════════
+
+1. Ve a Vercel.com
+2. Entra a tu proyecto
+3. Click en "Deployments" (arriba)
+4. Busca el deployment más reciente (marcado en ROJO)
+5. Click en ese deployment
+6. Lee los logs - busca líneas que digan "Error:" o "Failed:"
+7. COPIA ese error completo
+
+⚠️ El error 404 es solo el resultado. El ERROR REAL está en los logs.
+
+═══════════════════════════════════════════════════════════════
+  PASO 2: SOLUCIONES COMUNES
+═══════════════════════════════════════════════════════════════
+
+ERROR: "Missing environment variable"
+───────────────────────────────────────────────────────────────
+→ Ve a Settings → Environment Variables
+→ Agrega estas 4 variables:
+  - ADMIN_USERNAME = Admin
+  - ADMIN_PASSWORD = [tu contraseña]
+  - ADMIN_TOKEN = [tu token]
+  - NEXT_PUBLIC_BASE_URL = https://tu-proyecto.vercel.app
+→ Marca todas en "Production"
+→ Haz un nuevo deploy
+
+ERROR: "Cannot find module '@/lib/...'"
+───────────────────────────────────────────────────────────────
+→ El ZIP no incluye todos los archivos
+→ Crea un nuevo ZIP con TODOS los archivos
+→ Verifica que src/lib/ esté completo
+
+ERROR: "Cannot find module '...'"
+───────────────────────────────────────────────────────────────
+→ Falta package.json o alguna dependencia
+→ Verifica que package.json esté en el ZIP
+
+ERROR: "Build timeout"
+───────────────────────────────────────────────────────────────
+→ El ZIP es muy grande (probablemente incluyes node_modules)
+→ Crea un ZIP sin node_modules/
+
+═══════════════════════════════════════════════════════════════
+  PASO 3: CREAR ZIP LIMPIO (RECOMENDADO)
+═══════════════════════════════════════════════════════════════
+
+1. En tu carpeta Matrimonio:
+   - Selecciona SOLO estos archivos/carpetas:
+     ✅ package.json
+     ✅ package-lock.json
+     ✅ next.config.js
+     ✅ tsconfig.json
+     ✅ tailwind.config.ts
+     ✅ postcss.config.js
+     ✅ .eslintrc.json
+     ✅ .gitignore
+     ✅ Carpeta src/ (completa)
+     ✅ Carpeta public/ (completa)
+     ✅ Carpeta data/ (completa)
+
+2. Click derecho → "Enviar a" → "Carpeta comprimida"
+3. Renombra a: matrimonio-limpio.zip
+
+═══════════════════════════════════════════════════════════════
+  PASO 4: CREAR PROYECTO NUEVO EN VERCEL
+═══════════════════════════════════════════════════════════════
+
+1. En Vercel, elimina el proyecto actual:
+   → Settings → Delete Project
+
+2. Crea un nuevo proyecto:
+   → Add New → Project
+   → Sube matrimonio-limpio.zip
+   → Configura variables ANTES de deploy
+   → Deploy
+
+═══════════════════════════════════════════════════════════════
+  📸 QUÉ COMPARTIRME PARA AYUDARTE
+═══════════════════════════════════════════════════════════════
+
+1. El error completo de los logs (de Vercel → Deployments)
+2. Qué variables de entorno configuraste
+3. Qué archivos incluiste en el ZIP
+
+═══════════════════════════════════════════════════════════════
+

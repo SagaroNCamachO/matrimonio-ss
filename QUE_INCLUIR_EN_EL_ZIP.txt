@@ -1,0 +1,76 @@
+═══════════════════════════════════════════════════════════════
+  📦 QUÉ INCLUIR EN EL ZIP PARA VERCEL
+═══════════════════════════════════════════════════════════════
+
+✅ SÍ INCLUIR (OBLIGATORIO):
+───────────────────────────────────────────────────────────────
+✅ package.json
+✅ package-lock.json
+✅ next.config.js
+✅ tsconfig.json
+✅ tailwind.config.ts
+✅ postcss.config.js
+✅ .gitignore
+✅ .eslintrc.json (si existe)
+✅ Carpeta completa: src/
+✅ Carpeta completa: public/
+✅ Carpeta completa: data/
+
+✅ SÍ INCLUIR (OPCIONAL pero recomendado):
+───────────────────────────────────────────────────────────────
+✅ README.md
+✅ Archivos .md de documentación
+
+❌ NO INCLUIR (se generan automáticamente):
+───────────────────────────────────────────────────────────────
+❌ node_modules/ (muy pesado, se instala automáticamente)
+❌ .next/ (se genera en el build)
+❌ .vercel/ (se crea automáticamente)
+❌ .env.local (usa variables de entorno en Vercel)
+
+═══════════════════════════════════════════════════════════════
+  📝 CÓMO CREAR EL ZIP CORRECTO
+═══════════════════════════════════════════════════════════════
+
+MÉTODO 1: Seleccionar archivos específicos
+───────────────────────────────────────────────────────────────
+1. Abre la carpeta Matrimonio
+2. Mantén presionado Ctrl
+3. Selecciona estos archivos/carpetas:
+   - package.json
+   - package-lock.json
+   - next.config.js
+   - tsconfig.json
+   - tailwind.config.ts
+   - postcss.config.js
+   - .gitignore
+   - src (carpeta completa)
+   - public (carpeta completa)
+   - data (carpeta completa)
+4. Click derecho → "Enviar a" → "Carpeta comprimida"
+
+MÉTODO 2: Seleccionar todo y excluir
+───────────────────────────────────────────────────────────────
+1. Selecciona TODO (Ctrl+A)
+2. Click derecho → "Enviar a" → "Carpeta comprimida"
+3. Abre el ZIP creado
+4. ELIMINA estas carpetas del ZIP:
+   - node_modules (si está)
+   - .next (si está)
+   - Matrimonio (carpeta duplicada si existe)
+5. Guarda el ZIP
+
+═══════════════════════════════════════════════════════════════
+  ✅ VERIFICACIÓN FINAL
+═══════════════════════════════════════════════════════════════
+
+Antes de subir, abre el ZIP y verifica que tenga:
+✅ package.json (en la raíz)
+✅ Carpeta src/ (con app/, components/, lib/, types/)
+✅ Carpeta public/ (con images/)
+✅ Carpeta data/ (con database.json)
+
+Si falta algo, agrégalo al ZIP.
+
+═══════════════════════════════════════════════════════════════
+

@@ -1,0 +1,97 @@
+═══════════════════════════════════════════════════════════════
+  GUÍA RÁPIDA - APLICACIÓN DE MATRIMONIO
+═══════════════════════════════════════════════════════════════
+
+📌 PASOS BÁSICOS PARA INICIAR:
+
+1. INSTALAR NODE.JS
+   → Ve a: https://nodejs.org/
+   → Descarga la versión LTS (botón verde)
+   → Instala (solo haz clic en "Siguiente")
+   → Reinicia tu computadora
+
+2. ABRIR LA TERMINAL EN LA CARPETA DEL PROYECTO
+   → Navega a: C:\Users\Usuario\Desktop\Programa\Matrimonio
+   → Haz clic derecho → "Abrir PowerShell aquí"
+
+3. INSTALAR DEPENDENCIAS
+   → Escribe: npm install
+   → Presiona Enter
+   → Espera 2-5 minutos
+
+4. INICIAR LA APLICACIÓN
+   → Escribe: npm run dev
+   → Presiona Enter
+   → Verás: "Local: http://localhost:3000"
+
+5. ABRIR EN EL NAVEGADOR
+   → Abre Chrome/Firefox/Edge
+   → Escribe: http://localhost:3000
+   → ¡Listo! 🎉
+
+═══════════════════════════════════════════════════════════════
+  CÓMO USAR CADA SECCIÓN
+═══════════════════════════════════════════════════════════════
+
+🏠 INICIO
+   → Información general del matrimonio
+   → Fecha, lugares, código de vestimenta
+
+👥 INVITADOS (Panel `/admin`)
+   → Inicia sesión (Admin / 12345)
+   → Pestaña "Invitados" → "Agregar invitado"
+   → Para editar/eliminar usa los íconos de cada tarjeta
+
+🪑 MESAS (Panel `/admin`)
+   → Pestaña "Mesas" → "Crear mesa"
+   → Capacidad entre 1 y 10 personas
+   → Asigna invitados desde los selectores
+
+💰 GASTOS (Panel `/admin`)
+   → Pestaña "Gastos" → Configura presupuesto en CLP
+   → Registra cada gasto con monto y categoría
+
+═══════════════════════════════════════════════════════════════
+  COMANDOS IMPORTANTES
+═══════════════════════════════════════════════════════════════
+
+npm install          → Instalar dependencias
+npm run dev          → Iniciar aplicación
+Ctrl + C             → Detener aplicación
+
+═══════════════════════════════════════════════════════════════
+  PROBLEMAS COMUNES
+═══════════════════════════════════════════════════════════════
+
+❌ "npm no se reconoce"
+   → Node.js no está instalado
+   → Reinstala Node.js y reinicia
+
+❌ "Puerto 3000 en uso"
+   → Cierra otras aplicaciones
+   → O usa: npm run dev -- -p 3001
+
+❌ La página no carga
+   → Verifica que el servidor esté corriendo
+   → Usa: http://localhost:3000 (no https)
+
+❌ Cambié datos y no se guardaron
+   → Revisa que estés logueado en el panel
+   → Los datos se guardan en `data/database.json`
+   → Haz copias de seguridad periódicas
+
+═══════════════════════════════════════════════════════════════
+  DATOS IMPORTANTES
+═══════════════════════════════════════════════════════════════
+
+✅ Los datos del panel se guardan en `data/database.json`
+✅ Puedes editarlos manualmente o desde `/admin`
+✅ Haz respaldo del archivo antes de grandes cambios
+✅ Mantén la Terminal abierta mientras uses la app
+
+═══════════════════════════════════════════════════════════════
+
+¡Éxito con tu aplicación! 💍✨
+
+
+

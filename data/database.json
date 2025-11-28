@@ -1,0 +1,120 @@
+{
+  "weddingInfo": {
+    "couple": {
+      "name1": "Sandra Nicole Reyes Barria",
+      "name2": "Sergio Andres Castillo Ojeda"
+    },
+    "date": "2026-02-14",
+    "time": "16:00",
+    "hero": {
+      "headline": "Nuestra historia se une para siempre",
+      "subheadline": "Te invitamos a celebrar con nosotros un día lleno de amor, familia y amistad.",
+      "image": "https://i.ibb.co/xS01rQMF/Matrimonio.jpg"
+    },
+    "ceremony": {
+      "name": "Templo Parroquial San Pío X",
+      "address": "Gral. Baquedano 309, 5710026 Ancud, Los Lagos",
+      "lat": -41.86484001792552,
+      "lng": -73.82770578734548,
+      "date": "2026-02-14",
+      "time": "16:00"
+    },
+    "reception": {
+      "name": "Salón de Eventos Puerto Elvira",
+      "address": "Puerto Elvira Sector Rural S/N Ancud, 5710000, Los Lagos",
+      "lat": -41.798469,
+      "lng": -73.565497,
+      "date": "2026-02-14",
+      "time": "18:30"
+    },
+    "dressCode": "Elegante - Traje para caballeros y vestido para damas - Color blanco reservado para la novia",
+    "giftAccount": {
+      "bank": "Banco Estado",
+      "accountNumber": "15984726",
+      "accountHolder": "Sergio Castillo Ojeda",
+      "accountType": "cuenta_rut",
+      "accountRut": "15.984.726-8",
+      "totalReceived": 0,
+      "goal": 5000000,
+      "currency": "CLP"
+    },
+    "whatsappMessage": "¡Hola! Nos encantaría que nos acompañaras en nuestro matrimonio. Confirma tu asistencia aquí: {confirmUrl}",
+    "additionalInfo": {
+      "contact": {
+        "phone": "+56 9 87904865",
+        "email": "sergio.castillo.o@gmail.com"
+      },
+      "transport": {
+        "description": "Información sobre cómo llegar",
+        "details": [
+          "Estacionamiento privado en el lugar de la recepción."
+        ]
+      },
+      "accommodation": {
+        "description": "En el lugar del evento hay dos opciones de Alojamiento.",
+        "details": [
+          "Casona grande para 10 personas $250.000.-",
+          "Cabaña para 4 personas $100.000.-"
+        ]
+      },
+      "music": {
+        "description": "¿Tienes alguna canción especial?",
+        "details": [
+          "Comparte tus sugerencias antes del 1 de febrero",
+          "Email: sergio.castillo.o@gmail.com"
+        ]
+      }
+    },
+    "photoGallery": {
+      "images": [
+        {
+          "src": "https://scontent.fscl1-1.fna.fbcdn.net/v/t39.30808-6/466968337_10234370714906561_7233447823953301632_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGcG6s37jnXF_1qmhEghAP_jwB488uUV3GPAHjzy5RXcS4yXwCYXeOA-aLhPf8hPl0&_nc_ohc=q2OrzCkCqpIQ7kNvwFHHmmg&_nc_oc=Adm1quSeDwi3Gu333f8tkYJ7iVja_pG7bOa0qEDGh-A0iiBfJUO8n3tspY7cfHc60uo&_nc_zt=23&_nc_ht=scontent.fscl1-1.fna&_nc_gid=jjPZKAgInxsDa0tkTz4Rew&oh=00_AfiuuO06Q0OpCTcW5lUDZw5Rvvy8MuRj1FExie9GS2p17Q&oe=692BC5A0",
+          "alt": "Nuestros primeros besos"
+        },
+        {
+          "src": "https://scontent.fscl1-1.fna.fbcdn.net/v/t39.30808-6/467437852_10234427695851049_650916544308451907_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG8I-Yrx5KnwzOvdJF3jMa3W1G9gF4SWhpbUb2AXhJaGg1weVGJqELUh0aFkfEOgGY&_nc_ohc=6ha6oEBbo_MQ7kNvwFUGH0o&_nc_oc=AdlTb5D6iL9KuCtpBQ-_NnI0JQtYtd70ZEsoeA0cJzcb0hq7OLcP1-clR8MCWZRvefI&_nc_zt=23&_nc_ht=scontent.fscl1-1.fna&_nc_gid=P1wMuvDp4GCwCV7FDKftpA&oh=00_AfjagkIl9KAEerFam-je76wWQLDGz9UTI_W_gBokk_-r8w&oe=692BD825",
+          "alt": "Punta Arenas"
+        },
+        {
+          "src": "https://scontent.fscl1-1.fna.fbcdn.net/v/t39.30808-6/467532805_10234424687655846_4323773021585694276_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeF6r-41EE11vZYy1emnzp0weriXJXBvYB16uJclcG9gHal8YpPtz9OflJTMIBSOwaw&_nc_ohc=ln8S72y27lUQ7kNvwFnskhP&_nc_oc=AdkeGGjg4gBQwGsjehE1HgS9YQeNSVoD2Xd9ui7dxQqd2mh-Pgyav4z7s-I4ywtzGfM&_nc_zt=23&_nc_ht=scontent.fscl1-1.fna&_nc_gid=2N515qpBeaVg_glJlDN6gA&oh=00_Afj3mHpmX6QsxLg9uOQsbDtkX6JBhdKN9qsc6B5kVtQ90A&oe=692BE5DE",
+          "alt": "Sendero Cole Cole"
+        },
+        {
+          "src": "https://scontent.fscl1-1.fna.fbcdn.net/v/t39.30808-6/467449736_10234428362067704_5992564960477510081_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEm1npFjtrNMOdl6eV7CMbQ12sR4SOCgzTXaxHhI4KDNM6KIsiakXvt5PUXIGYVaPs&_nc_ohc=ly2OXqa8p2UQ7kNvwEMvRcm&_nc_oc=AdmLOIrq8k3X7fiV42gb3dMcyBoFV-C80_Z_34ur0WtZfshZtnoHIhosSvTJzWUXCoE&_nc_zt=23&_nc_ht=scontent.fscl1-1.fna&_nc_gid=dL0lRmGAzHa3XWDKfOCfhQ&oh=00_Afj2IPr1Qd5LKgP3dTIk5-DVP1iWbCKgVKAE4wI5gJ1mhA&oe=692BB868",
+          "alt": "Duatao"
+        },
+        {
+          "src": "https://scontent.fscl1-1.fna.fbcdn.net/v/t39.30808-6/468038149_10234716768237678_4792489745234441874_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEhD3pLMzNZcqQQwHju7Fof9c4HnLZyaHP1zgectnJoc14anEMdlNt0AgsSNHf92qI&_nc_ohc=nAxOhmyOsW4Q7kNvwFuLNPr&_nc_oc=AdnKnDNp0q8LK5LB7P4mS1UAFGXEphs0tT8Vd0NV9C6zSP95T7Ky0HRwv1-t7wDfxRo&_nc_zt=23&_nc_ht=scontent.fscl1-1.fna&_nc_gid=Bm2_OL4cha2TiQUsYt4psg&oh=00_AfgftIsI8IXYumXi3iPKDrmBupE7vmtRwsSvV-dGfEnEkQ&oe=692BE4F0",
+          "alt": "Loncoche"
+        },
+        {
+          "src": "https://scontent.fscl1-1.fna.fbcdn.net/v/t1.6435-9/49001884_10217478259845742_2063314752993492992_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFlTJYmjfQ_WUEPYXg2d6_Qc3xUfyMC1cVzfFR_IwLVxUtkNuE8hk2YSk9LoghOVpU&_nc_ohc=ZgCc12TnY3cQ7kNvwHfOHLs&_nc_oc=AdkcMEeZUA88UKBCxDKccgACVkWX8OQUm1ssgcfybzRnltMnUY75YuXHsJd3T4X25kg&_nc_zt=23&_nc_ht=scontent.fscl1-1.fna&_nc_gid=yad6w9kwD9Rg1tUxwlBo3g&oh=00_AfjjHBxzSovJSUzBoyVXfb73Iorcj0u3g1MwfLByIJDwQA&oe=694D7C1B",
+          "alt": "Compitiendo Juntos"
+        },
+        {
+          "src": "https://scontent.fscl1-1.fna.fbcdn.net/v/t1.6435-9/131244976_10224178517828004_1529794973253374209_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeFOdYEdpligoNXCno7r42s1EIVIQVvHBl0QhUhBW8cGXWYUb5KjlTt5KKRb7J8xw_s&_nc_ohc=ry2YiRbAsmIQ7kNvwE0l8Qx&_nc_oc=AdmQRpdEwUD4LSGz1kImLm4Tg_NTvbYkxnFBXcmoMVfev5HZu2h_AC3GE6oqmu-aLe8&_nc_zt=23&_nc_ht=scontent.fscl1-1.fna&_nc_gid=G9BsSDn0Fa5u6DBzZqv_9Q&oh=00_AfiBrksp15cpEcSKaqRjgVGFG65T5piDletbh3vFTaOL5A&oe=694D7D01",
+          "alt": "Esperando a Chechin"
+        },
+        {
+          "src": "https://scontent.fscl1-1.fna.fbcdn.net/v/t39.30808-6/487725950_10234384469370131_7741878913391112969_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeEhUiVVSR40zCFJwuWOekXrhyod2HFUszWHKh3YcVSzNYtQ9hYO4fASK5p4X49dVJE&_nc_ohc=HN1b8V9U4vAQ7kNvwF3OC4_&_nc_oc=AdkTpZLKMBv7CtP_CI54qn-C6SqQIdW5GnJrxd0ARZF5uIxYE5kJp6jcej-gyyr7098&_nc_zt=23&_nc_ht=scontent.fscl1-1.fna&_nc_gid=wyoHPgd4jHOSBqk5w6TApg&oh=00_Afj0DG1SVjwCOnoC1RhQ9ZE92slSRWAsDUhVC97l78Efig&oe=692BCFE1",
+          "alt": "Campeonato QIAN KUN TAO"
+        },
+        {
+          "src": "https://scontent.fscl1-1.fna.fbcdn.net/v/t39.30808-6/487205046_10234319619428923_6248052751307385006_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEsjagb6cBE5W_YkljmJZ6HO46sPG61b8g7jqw8brVvyNiteFYmm-D5seoBSJ9lS04&_nc_ohc=9H7enZoors8Q7kNvwGpJL7f&_nc_oc=Admp5Bh0Ck_6FFHxX2YCercHs0mZklooOmimgH3Rk-Iw1ta2SFxIpADiFuhQAAwsKsQ&_nc_zt=23&_nc_ht=scontent.fscl1-1.fna&_nc_gid=tDRySrg6eRDs6zJi-MCaHw&oh=00_Afiqj62uqvQRDfeas3IvQEsIikatjw6JGsqhQVh2w-BMYQ&oe=692BC9F4",
+          "alt": "14 de febrero 2022"
+        },
+        {
+          "src": "https://scontent.fscl1-1.fna.fbcdn.net/v/t39.30808-6/505826971_10235339276599715_5994369480036342695_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeGV-2v1GJXftEYka_ldeLw5CDr3fGy1J-sIOvd8bLUn617atcxJ7Ft_QQ_P8qszxVQ&_nc_ohc=cw8p0z98YPwQ7kNvwGkc0X8&_nc_oc=AdkxiTLrsezYNFLNxdvt4kDe08ll17UanVcRW5VezBipOLnJSSHMVclWPUQ3-SlhcNs&_nc_zt=23&_nc_ht=scontent.fscl1-1.fna&_nc_gid=E4y7XcxhKtzwMA8ngxGFtA&oh=00_Afie9IXOZs5Two28xhTsVqh0zUVnh1GXQSQK3S6sygmHLw&oe=692BC7AB",
+          "alt": "Fan Anime!"
+        },
+        {
+          "src": "https://scontent.fscl1-1.fna.fbcdn.net/v/t39.30808-6/505990250_10235328275684699_7887121234781617393_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGdaZlN2G0Qg8cRzqt1OFf78RcDRw3nLYXxFwNHDecthQ3bbAxfUTw6zzAu9WqGCXI&_nc_ohc=4hwM_RBxazQQ7kNvwG2WUsJ&_nc_oc=AdkHUuySc3ysG4FgjL1UWCAXRaK-ZS5fKqTbSQYc9YOZlVQZ3Aq8xhEVLVYIflOBkwM&_nc_zt=23&_nc_ht=scontent.fscl1-1.fna&_nc_gid=j4lrY3u2TSyipZHz5yM-bA&oh=00_AfhiRbEBpHKx6QODBWNezjbdMQwRmFrb_71-hDY7lYgnYQ&oe=692BC0D7",
+          "alt": "Familia"
+        }
+      ]
+    }
+  },
+  "guests": [],
+  "tables": [],
+  "expenses": []
+}
